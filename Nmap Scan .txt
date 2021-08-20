@@ -1,0 +1,50 @@
+﻿nmap 10.0.2.1-254                
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-08-20 00:53 EDT
+Nmap scan report for 10.0.2.1
+Host is up (0.00013s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+
+
+Nmap scan report for 10.0.2.2
+Host is up (0.00045s latency).
+Not shown: 998 filtered ports
+PORT        STATE SERVICE
+135/tcp open  msrpc
+445/tcp open  microsoft-ds
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+
+
+Nmap scan report for 10.0.2.3
+Host is up (0.000042s latency).
+All 1000 scanned ports on 10.0.2.3 are filtered
+MAC Address: 08:00:27:C2:CF:94 (Oracle VirtualBox virtual NIC)
+
+
+Nmap scan report for 10.0.2.15
+Host is up (0.0000020s latency).
+All 1000 scanned ports on 10.0.2.15 are closed
+
+
+Nmap done: 254 IP addresses (4 hosts up) scanned in 14.72 seconds
+
+
+
+
+Explanation:-  Nmap was able to successfully scanned 254 ip addresses and detected four potential target nodes. Each node was scanned for first 1000 ports.
+
+
+10.0.2.1- only one port was alive. 53/tcp, and domain service was running.
+           MAC starts with 52:54:00, which indicated to be a Virtual Machien
+
+
+10.0.2.2- Two ports were up, 135/tcp(msrpc was running) and 445/tcp( microsoft-ds was `        
+    running). This is a virtual node as well
+
+
+10.0.2.3- Scanned for the first 1000 ports and all of them were filtered.
+
+
+10.0.2.4- all the forts are closed
